@@ -1,0 +1,23 @@
+.shopping-list{
+    height: 100vh;
+    background: linear-gradient(rgba(245, 243, 243, 0.466),rgba(236, 235, 235, 0.486)), url('/assets/images/shopping-list.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px;
+}
+h1{
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+p{
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.item{
+    border: 1px solid orange;
+    border-radius: 10px;
+    background-color: rgba(248, 205, 126, 0.514);
+    width: 50%;
+}

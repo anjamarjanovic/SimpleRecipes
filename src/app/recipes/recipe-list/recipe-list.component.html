@@ -1,6 +1,8 @@
+<section class="recipe-list">
 <div class="row">
     <div class="col-xs-12">
-        <button class="btn btn-success" [routerLink]="['/recipes/new']">New recipes</button>
+        <p>Make your own recipe</p>
+        <button class="btn btn-warning" [routerLink]="['/recipes/new']">New recipes</button>
     </div>
 </div>
 <hr>
@@ -9,3 +11,4 @@
         <app-recipe-item *ngFor = "let recipeItem of recipes; let i = index" [recipe] = "recipeItem" [index]="i" ></app-recipe-item>
     </div>
 </div>
+</section>

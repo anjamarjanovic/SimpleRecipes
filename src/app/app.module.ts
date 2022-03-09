@@ -18,7 +18,7 @@ import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.compon
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 import { AuthComponent } from './auth/auth.component';
 import { LoadingComponent } from './shared/loading-spinner/loading/loading.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +40,8 @@ import { LoadingComponent } from './shared/loading-spinner/loading/loading.compo
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   bootstrap: [AppComponent],
   providers:[{provide:HTTP_INTERCEPTORS, useClass:AuthInterceptorService, multi:true}]

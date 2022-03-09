@@ -28,6 +28,9 @@ this.dataStorageService.storeRecipes();
   onFetchData(){
     this.dataStorageService.fetchRecipes().subscribe();
   }
+  onLogout(){
+    this.authService.logout();
+  }
   ngOnDestroy(){
     this.userSub.unsubscribe();
   }
